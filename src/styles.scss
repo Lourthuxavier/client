@@ -37,7 +37,9 @@ body {
 }
 
 .ck-editor__editable_inline {
-  min-height: 500px;
+  min-height: 400px !important;
+  max-height: 550px !important;
+  overflow  : auto !important;
 }
 
 .ck-editor__editable_inline ul>li,
@@ -52,12 +54,60 @@ ol>li>ol>li {
 }
 
 .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
-  // top  : 50px !important;
-  // right: 20px !important;
-  // width: 700px !important;
+  top  : 50px !important;
+  right: 20px !important;
+  width: 700px !important;
 }
 
 
 
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 320px) and (max-width:450px) {
+  .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
+    top  : 100px !important;
+    right: 20px !important;
+    width: 300px !important;
+    // hwi
+  }
+
+  .wrs_editor .wrs_panelContainer {
+    overflow: auto !important;
+  }
+
+  .wrs_editor .wrs_toolbar .wrs_header {
+    overflow: auto !important;
+  }
+}
+
+// // .ck.ck-balloon-panel.ck-powered-by-balloon {
+// //   --ck-powered-by-background: var(--accented-background-color);
+// // }
+
+// .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by a::after {
+//   display: none !important;
+// }
+
+// .ck.ck-editor__editable.note-detail-editable-text-editor {
+//   padding-bottom: 10px;
+// }
+
+// .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by .ck-powered-by__label {
+//   text-transform: none;
+//   font-family   : var(--main-font-family);
+//   padding-left  : 2px;
+//   color         : white !important;
+//   border        : none !important;
+//   border-color  : white !important;
+// }
+
+// .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by .ck-icon {
+//   filter: brightness(10);
+// }
+
+// .ck .ck-balloon-panel .ck-balloon-panel_position_border-side_right .ck-powered-by-balloon {
+//   display: none !important;
+// }
+
+// .ck .ck-balloon-panel .ck-balloon-panel_position_border-side_right .ck-powered-by-balloon {
+//   display: none !important;
+// }

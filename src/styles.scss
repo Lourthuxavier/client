@@ -18,10 +18,10 @@
 @import "component-global";
 
 // @import "tailwindcss/base";
-// @import "tailwindcss/components";
+@import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@tailwind base;
+// @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -36,33 +36,13 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.ck-editor__editable_inline {
-  min-height: 400px !important;
-  max-height: 550px !important;
-  overflow  : auto !important;
-}
+@media screen and (min-width: 300px) and (max-width:450px) {
+  .ck-editor__editable_inline {
+    min-height: 250px !important;
+    max-height: 300px !important;
+    overflow  : auto !important;
+  }
 
-.ck-editor__editable_inline ul>li,
-ol>li {
-  margin-left: 20px !important;
-  color      : red($color: #000000);
-}
-
-.ck-editor__editable_inline ul>li>ul>li,
-ol>li>ol>li {
-  margin-left: 40px !important;
-}
-
-.wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
-  top  : 50px !important;
-  right: 20px !important;
-  width: 700px !important;
-}
-
-
-
-
-@media screen and (min-width: 320px) and (max-width:450px) {
   .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
     top  : 100px !important;
     right: 20px !important;
@@ -77,11 +57,44 @@ ol>li>ol>li {
   .wrs_editor .wrs_toolbar .wrs_header {
     overflow: auto !important;
   }
+
+  .wrs_modal_dialogContainer.wrs_modal_ios,
+  .wrs_modal_dialogContainer.wrs_modal_android {
+    height: 50% !important;
+    width : 99% !important;
+    top   : 75% !important;
+  }
 }
 
-// // .ck.ck-balloon-panel.ck-powered-by-balloon {
-// //   --ck-powered-by-background: var(--accented-background-color);
-// // }
+@media screen and (min-width: 550px) {
+  .ck-editor__editable_inline {
+    min-height: 450px !important;
+    max-height: 550px !important;
+    overflow  : auto !important;
+  }
+
+  // .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
+  //   top  : 100px !important;
+  //   right: 20px !important;
+  //   width: 300px !important;
+  //   // hwi
+  // }
+
+
+  .wrs_modal_dialogContainer.wrs_modal_ios,
+  .wrs_modal_dialogContainer.wrs_modal_android {
+    height: 40% !important;
+    width : 50% !important;
+    top   : 40% !important;
+  }
+
+}
+
+
+
+// .ck.ck-balloon-panel.ck-powered-by-balloon {
+//   --ck-powered-by-background: var(--accented-background-color);
+// }
 
 // .ck.ck-balloon-panel.ck-powered-by-balloon .ck.ck-powered-by a::after {
 //   display: none !important;
@@ -111,3 +124,7 @@ ol>li>ol>li {
 // .ck .ck-balloon-panel .ck-balloon-panel_position_border-side_right .ck-powered-by-balloon {
 //   display: none !important;
 // }
+
+.ck.ck-balloon-panel {
+  display: none !important;
+}

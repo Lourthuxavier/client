@@ -32,27 +32,33 @@
     }
 }
 
-@media screen and (min-width: 450px) {
-    .ck-editor__editable_inline {
-        min-height: 450px !important;
-        max-height: 550px !important;
-        overflow  : auto !important;
-    }
-
-    // .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
-    //   top  : 100px !important;
-    //   right: 20px !important;
-    //   width: 300px !important;
-    //   // hwi
-    // }
-
-
-    .wrs_modal_dialogContainer.wrs_modal_ios,
-    .wrs_modal_dialogContainer.wrs_modal_android {
-        height   : 40% !important;
-        width    : 50% !important;
-        top      : 27% !important;
-        transform: translate(99%, -50%) !important;
-    }
-
+.ck-editor__editable_inline {
+    min-height: 450px !important;
+    max-height: 550px !important;
+    overflow  : auto !important;
 }
+
+// @media screen and (min-width: 450px) {
+//     .ck-editor__editable_inline {
+//         min-height: 450px !important;
+//         max-height: 550px !important;
+//         overflow  : auto !important;
+//     }
+
+//     // .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
+//     //   top  : 100px !important;
+//     //   right: 20px !important;
+//     //   width: 300px !important;
+//     //   // hwi
+//     // }
+
+
+//     .wrs_modal_dialogContainer.wrs_modal_ios,
+//     .wrs_modal_dialogContainer.wrs_modal_android {
+//         height   : 40% !important;
+//         width    : 50% !important;
+//         top      : 27% !important;
+//         transform: translate(50%, -50%) !important;
+//     }
+
+// }

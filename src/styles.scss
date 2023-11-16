@@ -36,59 +36,6 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-@media screen and (min-width: 300px) and (max-width:450px) {
-  .ck-editor__editable_inline {
-    min-height: 250px !important;
-    max-height: 300px !important;
-    overflow  : auto !important;
-  }
-
-  .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
-    top  : 100px !important;
-    right: 20px !important;
-    width: 300px !important;
-    // hwi
-  }
-
-  .wrs_editor .wrs_panelContainer {
-    overflow: auto !important;
-  }
-
-  .wrs_editor .wrs_toolbar .wrs_header {
-    overflow: auto !important;
-  }
-
-  .wrs_modal_dialogContainer.wrs_modal_ios,
-  .wrs_modal_dialogContainer.wrs_modal_android {
-    height: 50% !important;
-    width : 99% !important;
-    top   : 75% !important;
-  }
-}
-
-@media screen and (min-width: 550px) {
-  .ck-editor__editable_inline {
-    min-height: 450px !important;
-    max-height: 550px !important;
-    overflow  : auto !important;
-  }
-
-  // .wrs_modal_dialogContainer.wrs_modal_desktop.wrs_stack {
-  //   top  : 100px !important;
-  //   right: 20px !important;
-  //   width: 300px !important;
-  //   // hwi
-  // }
-
-
-  .wrs_modal_dialogContainer.wrs_modal_ios,
-  .wrs_modal_dialogContainer.wrs_modal_android {
-    height: 40% !important;
-    width : 50% !important;
-    top   : 40% !important;
-  }
-
-}
 
 
 
